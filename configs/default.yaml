@@ -1,0 +1,49 @@
+paths:
+  raw_train: "medical_triage_train_clean (1).json"
+  raw_test: "medical_triage_test_clean.json"
+  processed_dir: "data/processed"
+  sft_train: "data/processed/sft_train.json"
+  sft_valid: "data/processed/sft_valid.json"
+  sft_all: "data/processed/sft_all_clean.json"
+  dpo_train: "dpo_train_2.json"
+  dpo_valid: "dpo_valid_2.json"
+model:
+  base_model: "Qwen/Qwen2.5-7B-Instruct"
+  sft_lora_path: "saves/qwen2.5-7b/lora/exp1_lora_r8_all"
+  dpo_lora_path: "saves/qwen2.5-7b/lora/dpo_v4_r8_beta2_3epoch"
+  dpo_merged_path: "saves/qwen2.5-7b/dpo_merged"
+  grpo_lora_path: "outputs-grpo-v1/lora_adapter"
+  template: "qwen"
+sft:
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  cutoff_len: 512
+  per_device_train_batch_size: 8
+  gradient_accumulation_steps: 2
+  learning_rate: 5.0e-5
+  num_train_epochs: 3
+dpo:
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  pref_beta: 2.0
+  pref_loss: "sigmoid"
+  pref_ftx: 0.1
+  cutoff_len: 512
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 1.0e-6
+  num_train_epochs: 3
+grpo:
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  num_generations: 4
+  max_completion_length: 256
+  temperature: 0.9
+  beta: 0.04
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 5.0e-6
+  num_train_epochs: 2

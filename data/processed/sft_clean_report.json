@@ -1,0 +1,42 @@
+{
+  "num_clean_rows": 4991,
+  "department_distribution": {
+    "神经内科": 629,
+    "儿科": 611,
+    "泌尿外科": 608,
+    "妇科": 557,
+    "消化内科": 535,
+    "呼吸内科": 412,
+    "皮肤科": 377,
+    "眼科": 374,
+    "骨科": 336,
+    "耳鼻喉科": 294,
+    "心血管内科": 192,
+    "精神心理科": 66
+  },
+  "urgency_distribution": {
+    "中": 3983,
+    "低": 665,
+    "高": 343
+  },
+  "cleaning_stats": {
+    "source_rows:medical_triage_train_clean (1).json": 4632,
+    "source_rows:medical_triage_test_clean.json": 515,
+    "drop_duplicate_input": 98,
+    "map_department:男科->泌尿外科": 25,
+    "drop_department:内分泌科": 19,
+    "drop_department:风湿免疫科": 12,
+    "drop_department:血液科": 8,
+    "drop_department:外科": 6,
+    "duplicate_output_conflicts": 4,
+    "drop_department:血管外科": 3,
+    "drop_department:内分泌内科": 2,
+    "drop_department:内科": 2,
+    "drop_department:口腔科": 2,
+    "drop_department:牙科": 1,
+    "drop_department:乳腺外科": 1,
+    "drop_department:肛肠科": 1,
+    "map_department:妇产科->妇科": 1,
+    "drop_unknown_department:风湿长期发烧的情况需要到风湿免疫科，但风湿免疫科不在上述列表中，因此选择最相关的科室：神经内科": 1
+  }
+}

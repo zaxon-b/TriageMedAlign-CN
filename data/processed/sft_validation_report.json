@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "file": "data/processed/sft_train.json",
+      "num_rows": 4492,
+      "num_errors": 0,
+      "passed": true,
+      "department_distribution": {
+        "儿科": 556,
+        "神经内科": 555,
+        "泌尿外科": 552,
+        "妇科": 493,
+        "消化内科": 473,
+        "呼吸内科": 375,
+        "眼科": 340,
+        "皮肤科": 340,
+        "骨科": 307,
+        "耳鼻喉科": 265,
+        "心血管内科": 175,
+        "精神心理科": 61
+      },
+      "urgency_distribution": {
+        "中": 3580,
+        "低": 600,
+        "高": 312
+      },
+      "errors_preview": []
+    },
+    {
+      "file": "data/processed/sft_valid.json",
+      "num_rows": 499,
+      "num_errors": 0,
+      "passed": true,
+      "department_distribution": {
+        "神经内科": 74,
+        "妇科": 64,
+        "消化内科": 62,
+        "泌尿外科": 56,
+        "儿科": 55,
+        "皮肤科": 37,
+        "呼吸内科": 37,
+        "眼科": 34,
+        "骨科": 29,
+        "耳鼻喉科": 29,
+        "心血管内科": 17,
+        "精神心理科": 5
+      },
+      "urgency_distribution": {
+        "中": 403,
+        "低": 65,
+        "高": 31
+      },
+      "errors_preview": []
+    },
+    {
+      "file": "data/processed/sft_all_clean.json",
+      "num_rows": 4991,
+      "num_errors": 0,
+      "passed": true,
+      "department_distribution": {
+        "神经内科": 629,
+        "儿科": 611,
+        "泌尿外科": 608,
+        "妇科": 557,
+        "消化内科": 535,
+        "呼吸内科": 412,
+        "皮肤科": 377,
+        "眼科": 374,
+        "骨科": 336,
+        "耳鼻喉科": 294,
+        "心血管内科": 192,
+        "精神心理科": 66
+      },
+      "urgency_distribution": {
+        "中": 3983,
+        "低": 665,
+        "高": 343
+      },
+      "errors_preview": []
+    }
+  ]
+}

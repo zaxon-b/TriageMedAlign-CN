@@ -1,0 +1,93 @@
+# macOS / editor metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local experiment notebooks and write-up artifacts not published to GitHub
+/*.ipynb
+/TriageMedical_Interview_QA.md
+/TriageMedical_interview_review_guide.md
+/TriageMedical_experiment_summary.md
+/PROJECT_CONTEXT.md
+/eval_comparison_report.md
+/grpo_design.md
+/session_export.md
+/reports/
+/outputs/
+/*.pptx
+/package.json
+/scripts/build_interview_qa_pdf.py
+/medical_triage_train_clean*.json
+/medical_triage_test_clean.json
+/data/processed/pipeline_validation_report.json
+
+# Node / frontend tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Office temporary lock files
+~$*
+*.tmp
+*.temp
+
+# Experiment logs and service caches
+wandb/
+mlruns/
+runs/
+tensorboard/
+lightning_logs/
+.cache/
+cache/
+
+# Model weights, checkpoints, and adapter artifacts
+checkpoints/
+checkpoint*/
+model/
+models/
+weights/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+adapter_model*
+pytorch_model*
+
+# Vector databases / retrieval indexes
+chroma/
+chromadb/
+vector_db/
+vectorstore/
+faiss_index/
+*.faiss
+*.index
+
+# Local secrets
+.env
+.env.*
+!.env.example
